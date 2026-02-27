@@ -3,81 +3,104 @@
 A comprehensive collection of compiler design assignments implementing lexical analysis, syntax analysis, and semantic analysis for a C-like programming language.
 
 ## 📚 Course Information
-- **Course:** CSE420 - Compiler Design
-- **Student ID:** 22101371
-- **Institution:** [Your University Name]
+
+| Field | Details |
+|-------|---------|
+| **Course** | CSE420 - Compiler Design |
+| **Student** | Md Hasib Ullah Khan Alvie |
+| **Student ID** | 22101371 |
+| **Email** | mdhasibullahkhanalvie@gmail.com |
+| **Institution** | BRAC University |
+| **Semester** | Fall 2025 |
 
 ## 🎯 Project Overview
 
 This repository contains the implementation of a complete compiler frontend including:
 
 1. **Lexical Analyzer** - Tokenization and pattern recognition
-2. **Syntax Analyzer** - Grammar parsing and syntax tree generation  
-3. **Semantic Analyzer** - Symbol table management and type checking
+2. **Syntax Analyzer** - Grammar parsing and parse tree generation
+3. **Semantic Analyzer** - Scope-aware symbol table management and type checking
 
 ## 📂 Repository Structure
 
 ```
+CSE420-Compiler-Design/
 ├── Assignment-2/           # Lexical & Syntax Analysis
-├── Assignment-3/           # Symbol Table & Scope Management (Coming Soon)
-├── Assignment-4/           # Semantic Analysis & Code Generation (Coming Soon)
-└── README.md
+│   ├── include/            #   Header files
+│   ├── src/                #   Flex & Bison sources
+│   ├── test-cases/         #   3 test inputs
+│   ├── Makefile
+│   ├── README.md
+│   └── ...
+├── Assignment-3/           # Semantic Analysis & Symbol Table Management
+│   ├── include/            #   Header files
+│   ├── src/                #   Flex & Bison sources
+│   ├── test-cases/         #   Test input
+│   ├── Makefile
+│   ├── README.md
+│   ├── LICENSE
+│   └── CHANGELOG.md
+└── README.md               # This file
 ```
 
 ## 🚀 Current Progress
 
-### ✅ Assignment 2 - Lexical & Syntax Analysis (COMPLETED)
-- [x] **Lexical Analyzer** - Complete Flex implementation with 18+ keywords
-- [x] **Syntax Analyzer** - Full Bison grammar with C-like language support  
-- [x] **Symbol Management** - Three-tier architecture (symbol_info, scope_table, symbol_table)
-- [x] **Hash Tables** - Efficient symbol storage with collision resolution
-- [x] **Error Handling** - Comprehensive error reporting with line numbers
-- [x] **Test Suite** - 3 comprehensive test cases covering all functionality
-- [x] **Build System** - Professional Makefile with automated testing
-- [x] **Documentation** - Complete technical documentation and guides
-- [x] **Version Control** - Professional Git workflow with semantic commits
+### ✅ Assignment 2 — Lexical & Syntax Analysis (COMPLETED)
+- [x] **Lexical Analyzer** — Complete Flex implementation with 18+ keywords
+- [x] **Syntax Analyzer** — Full Bison grammar with C-like language support
+- [x] **Symbol Management** — Three-tier architecture (`symbol_info`, `scope_table`, `symbol_table`)
+- [x] **Hash Tables** — Efficient symbol storage with collision resolution
+- [x] **Error Handling** — Comprehensive error reporting with line numbers
+- [x] **Test Suite** — 3 comprehensive test cases covering all functionality
+- [x] **Build System** — Professional Makefile with automated testing
+- [x] **Documentation** — Complete technical documentation and contribution guides
 
-**Current Status:** 🎉 Assignment 2 successfully implemented and deployed with production-quality code!
+> See [Assignment-2/README.md](Assignment-2/README.md) for full details.
 
-### ⏳ Upcoming Assignments
-- [ ] **Assignment 3** - Advanced Symbol Table Management & Scope Resolution
-- [ ] **Assignment 4** - Semantic Analysis & Intermediate Code Generation
+### ✅ Assignment 3 — Semantic Analysis & Symbol Table Management (COMPLETED)
+- [x] **Scope-Aware Symbol Table** — Hierarchical scope manager with stack-based enter/exit
+- [x] **Type Checking** — Full type propagation through expression trees
+- [x] **Semantic Errors** — 11 distinct error categories (undeclared variables/functions, type mismatches, duplicate declarations, void operations, zero division, etc.)
+- [x] **Function Validation** — Argument count and type checking on every call site
+- [x] **Return Type Validation** — Checked against the enclosing function's declared type
+- [x] **Parse Log** — Detailed `22101371_log.txt` with every production rule applied
+- [x] **Error Report** — Dedicated `22101371_error.txt` with line numbers and error totals
+- [x] **MIT License** — Open-source license included
+
+> See [Assignment-3/README.md](Assignment-3/README.md) for full details.
+
+### ⏳ Upcoming
+- [ ] **Assignment 4** — Intermediate Code Generation (Three-Address Code)
 
 ## 🛠️ Technologies Used
 
-- **Flex** - Fast lexical analyzer generator
-- **Bison** - Parser generator
-- **C++** - Implementation language
-- **Make** - Build automation
+- **Flex** — Fast lexical analyzer generator
+- **Bison** — Parser generator (LALR(1))
+- **C++** — Implementation language
+- **GNU Make** — Build automation
 
-## 📋 Features
-
-- **Multi-language Support:** Recognizes C-like syntax including keywords, operators, and identifiers
-- **Error Recovery:** Comprehensive error detection and reporting
-- **Symbol Management:** Efficient symbol table implementation with scope handling
-- **Test Coverage:** Extensive test cases covering edge cases
-
-## 🏃‍♂️ How to Run
+## 🏃‍♂️ Quick Start
 
 ```bash
-# Compile the analyzer
+# --- Assignment 2 ---
+cd Assignment-2
 make
+make test
 
-# Run with input file
-./compiler input.c
-
-# View output
-cat output.log
+# --- Assignment 3 ---
+cd Assignment-3
+make
+make test
+# Outputs: 22101371_log.txt, 22101371_error.txt
 ```
 
-## 📊 Assignment Details
+## 📊 Assignment Overview
 
-Each assignment builds upon the previous one, creating a complete compiler pipeline:
-
-1. **Lexical Analysis:** Breaking source code into tokens
-2. **Syntax Analysis:** Building parse trees from tokens  
-3. **Semantic Analysis:** Type checking and symbol resolution
-4. **Code Generation:** Producing intermediate code
+| Assignment | Topic | Status |
+|-----------|-------|--------|
+| Assignment 2 | Lexical & Syntax Analysis | ✅ Complete |
+| Assignment 3 | Semantic Analysis & Symbol Table | ✅ Complete |
+| Assignment 4 | Intermediate Code Generation | ⏳ Upcoming |
 
 ## 🤝 Contributing
 
@@ -85,8 +108,9 @@ This is an academic project. Please respect academic integrity policies.
 
 ## 📄 License
 
-This project is for educational purposes as part of CSE420 coursework.
+Each assignment folder contains its own MIT License.  
+This repository is maintained for educational purposes as part of CSE420 coursework.
 
 ---
 
-*Last Updated: January 2026*
+*Last Updated: February 2026*
