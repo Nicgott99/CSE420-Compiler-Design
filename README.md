@@ -31,12 +31,23 @@ CSE420-Compiler-Design/
 │   ├── test-cases/         #   3 test inputs
 │   ├── Makefile
 │   ├── README.md
+│   ├── LICENSE
+│   ├── CHANGELOG.md
 │   └── ...
 ├── Assignment-3/           # Semantic Analysis & Symbol Table Management
 │   ├── include/            #   Header files
 │   ├── src/                #   Flex & Bison sources
 │   ├── test-cases/         #   Test input
 │   ├── Makefile
+│   ├── README.md
+│   ├── LICENSE
+│   └── CHANGELOG.md
+├── Assignment-4/           # Intermediate Code Generation (Three-Address Code)
+│   ├── include/            #   Header files (TAC system + symbol management)
+│   ├── src/                #   Flex & Bison sources
+│   ├── test-cases/         #   Test input
+│   ├── Makefile
+│   ├── script.sh
 │   ├── README.md
 │   ├── LICENSE
 │   └── CHANGELOG.md
@@ -69,8 +80,18 @@ CSE420-Compiler-Design/
 
 > See [Assignment-3/README.md](Assignment-3/README.md) for full details.
 
-### ⏳ Upcoming
-- [ ] **Assignment 4** — Intermediate Code Generation (Three-Address Code)
+### ✅ Assignment 4 — Intermediate Code Generation (Three-Address Code) (COMPLETED)
+- [x] **Three-Address Code System** — Complete TAC representation with 9 instruction formats
+- [x] **TAC Generator** — Automatic temporary variable and label generation
+- [x] **Semantic Actions** — Full TAC emission during parsing
+- [x] **Instruction Formats** — Binary ops, unary ops, assignments, jumps, array access, function calls, returns, prints
+- [x] **Symbol Integration** — Full inheritance of symbol table from Assignment 3
+- [x] **Test Case** — GCD function demonstrating recursion and control flow
+- [x] **Build System** — Extended Makefile with TAC-specific targets
+- [x] **Documentation** — Comprehensive TAC concepts and reference guide (280+ lines)
+- [x] **MIT License** — Open-source license included
+
+> See [Assignment-4/README.md](Assignment-4/README.md) for full details.
 
 ## 🛠️ Technologies Used
 
@@ -92,6 +113,12 @@ cd Assignment-3
 make
 make test
 # Outputs: 22101371_log.txt, 22101371_error.txt
+
+# --- Assignment 4 ---
+cd Assignment-4
+make
+make test
+# Outputs: TAC instructions from three-address code compiler
 ```
 
 ## 📊 Assignment Overview
@@ -100,7 +127,7 @@ make test
 |-----------|-------|--------|
 | Assignment 2 | Lexical & Syntax Analysis | ✅ Complete |
 | Assignment 3 | Semantic Analysis & Symbol Table | ✅ Complete |
-| Assignment 4 | Intermediate Code Generation | ⏳ Upcoming |
+| Assignment 4 | Intermediate Code Generation (TAC) | ✅ Complete |
 
 ## 🤝 Contributing
 
@@ -113,4 +140,4 @@ This repository is maintained for educational purposes as part of CSE420 coursew
 
 ---
 
-*Last Updated: February 2026*
+*Last Updated: January 2025*
